@@ -40,7 +40,7 @@ const getTotalScore = (ScoreArray) => {
 
 };
 
-
-console.log(getTotalScore([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6]));
+let scores = [3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6];
+console.log(getTotalScore(scores));
 
 module.exports = { getTotalScore };
