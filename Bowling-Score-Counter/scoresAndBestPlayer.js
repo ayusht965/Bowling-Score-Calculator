@@ -22,7 +22,7 @@ const getTotalScore = (ScoreArray) => {
             }
         } else if (ScoreArray[index] == 10) {
             TotalScore += 10 + ScoreArray[index + 1] + ScoreArray[index + 2];
-            index += 3;
+            index += 1;
             frameCount += 1;
         } else if (ScoreArray[index] + ScoreArray[index + 1] == 10) {
             TotalScore += ScoreArray[index] + ScoreArray[index + 1] + ScoreArray[index + 2];
@@ -42,3 +42,5 @@ const getTotalScore = (ScoreArray) => {
 
 
 console.log(getTotalScore([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6]));
+
+module.exports = { getTotalScore };
